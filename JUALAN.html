@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YORIE HOSTING</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 10px;
+      font-size: 28px;
+      font-weight: bold;
+      animation: glitch 1.5s infinite;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px red, -2px -2px blue; }
+      25% { text-shadow: -2px 2px lime, 2px -2px cyan; }
+      50% { text-shadow: 2px -2px yellow, -2px 2px magenta; }
+      75% { text-shadow: -1px -1px white, 1px 1px gray; }
+      100% { text-shadow: 2px 2px red, -2px -2px blue; }
+    }
+    .photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin: 20px auto 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #222;
+      margin: 10px auto;
+      padding: 12px 18px;
+      width: 80%;
+      border-radius: 12px;
+      font-size: 15px;
+      text-align: left;
+    }
+    .payment {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 30px auto;
+      width: 85%;
+    }
+    .qris {
+      width: 250px;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+    .pay-box {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .pay-item {
+      background: #222;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .btn {
+      background: #00aaee;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .btn:hover {
+      background: #0077aa;
+    }
+    a.download-btn, button.download-btn {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      padding: 8px 15px;
+      margin-top: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a.download-btn:hover, button.download-btn:hover {
+      background: #1e7e34;
+    }
+    .snow span {
+      position: fixed;
+      color: white;
+      animation: fall 10s linear infinite;
+      font-size: 18px;
+      z-index: 999;
+    }
+    @keyframes fall {
+      0% { top: -10px; opacity: 0; }
+      50% { opacity: 1; }
+      100% { top: 110vh; opacity: 0; }
+    }
+    .promo {
+      background: #ff0066;
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: fit-content;
+      font-weight: bold;
+      animation: blink 1.5s infinite alternate;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
+    .habis-label {
+      background: linear-gradient(45deg, #ff0033, #cc0000);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 50px;
+      font-size: 11px;
+      margin-left: 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 0 0 8px red;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Efek Salju -->
+  <div class="snow">
+    <span style="left: 5%; animation-delay: 0s;">❄</span>
+    <span style="left: 20%; animation-delay: 2s;">❄</span>
+    <span style="left: 40%; animation-delay: 4s;">❄</span>
+    <span style="left: 60%; animation-delay: 1s;">❄</span>
+    <span style="left: 80%; animation-delay: 3s;">❄</span>
+  </div>
+
+  <!-- Musik -->
+  <audio autoplay loop hidden>
+    <source src="https://files.catbox.moe/gqtgt7.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Profil & Judul -->
+  <img src="https://files.catbox.moe/u6tczy.jpg" alt="Yorie Profile" class="photo" />
+  <h1>YORIE HOSTING</h1>
+  <p>PANEL | SCRIPT BOT | SUNTIK SOSMED | CREATE WEB | DLL</p>
+
+  <!-- Promo -->
+  <div class="promo">🔥 Promo Juli: Diskon 30% Suntik Sosmed!</div>
+
+  <!-- Layanan -->
+  <ul>
+    <li>🤖 Panel Bot WhatsApp <span class="habis-label">Stok Habis</span></li>
+    <li>⚙️ Script Bot / API</li>
+    <li>💻 Web Custom</li>
+    <li>📞 Nokos Indo</li>
+    <li>📲 Suntik Sosmed</li>
+    <li>📂 Hosting Script</li>
+  </ul>
+
+  <!-- Pembayaran -->
+  <div class="payment">
+    <h2>Metode Pembayaran</h2>
+    <p>Scan QRIS</p>
+    <img src="https://files.catbox.moe/b77hm7.jpg" alt="QRIS Yorie" class="qris" />
+    <br>
+    <a class="download-btn" href="https://files.catbox.moe/b77hm7.jpg" download>⬇ Download QRIS</a>
+
+    <!-- Upload Bukti -->
+    <br><br>
+    <h3>Upload Bukti Pembayaran (Otomatis ke WhatsApp)</h3>
+    <form action="https://formsubmit.co/eekbau113@gmail.com" method="POST" enctype="multipart/form-data" onsubmit="return handleUpload()">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Bukti Pembayaran dari Pelanggan">
+      <input type="hidden" name="_next" id="next-link" value="#">
+      <input type="file" name="attachment" id="fileInput" accept="image/*,.pdf" required><br><br>
+      <button type="submit" class="download-btn">📤 Upload & Kirim ke CS</button>
+    </form>
+
+    <!-- Dana & Gopay -->
+    <div class="pay-box">
+      <div class="pay-item">
+        Dana: <span id="dana">085215996783</span>
+        <button class="btn" onclick="salin('dana')">SALIN</button>
+      </div>
+      <div class="pay-item">
+        Gopay: <span id="gopay">081219010585</span>
+        <button class="btn" onclick="salin('gopay')">SALIN</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kontak CS -->
+  <br>
+  <a class="download-btn" href="https://wa.me/6285215996783?text=Halo%20admin%2C%20saya%20mau%20tanya%20tentang%20layanan%20YORIE%20HOSTING" target="_blank">💬 Chat CS Sekarang</a>
+
+  <!-- Script -->
+  <script>
+    function salin(id) {
+      const text = document.getElementById(id).textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Nomor berhasil disalin: " + text);
+      });
+    }
+
+    function handleUpload() {
+      const fileInput = document.getElementById('fileInput');
+      const fileName = fileInput.files[0]?.name || 'Bukti Pembayaran';
+      const whatsappLink = `https://wa.me/6285215996783?text=Halo%20kak%2C%20saya%20sudah%20melakukan%20pembayaran.%0ABukti%3A%20*${fileName}*%0ATolong%20cek%20ya~`;
+      document.getElementById('next-link').value = whatsappLink;
+      return true;
+    }
+  </script>
+
+</body>
+</html>
